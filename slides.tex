@@ -34,7 +34,8 @@
   \pause
 
   \begin{itemize}
-    \item We're trying to answer questions that require consulting heterogeneous data sources.
+    \item We're trying to answer questions that require consulting
+      heterogeneous data sources.
 
     \pause
 
@@ -51,7 +52,8 @@
 
       \pause
 
-      \item Each data source has its specific browsing/querying mechanism (no common interface.)
+      \item Each data source has its specific browsing/querying mechanism (no
+        common interface.)
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -61,11 +63,15 @@
   \framesubtitle{Sample problem domain: \textbf{biorefinery}}
 
   \begin{itemize}
-    \item Ligno-cellulosic biomass pre-treatment before enzymatic hydrolysis is an essential step to obtain good yields.
+    \item Ligno-cellulosic biomass pre-treatment before enzymatic hydrolysis is
+      an essential step to obtain good yields.
 
     \pause
 
-    \item Several pre-treatment principles available, but \textbf{no clear criteria on how to choose the best one} taking into account environmental sustainability for a given biomass and biorefinery product (e.g. glucose.)
+    \item Several pre-treatment principles available, but \textbf{no clear
+      criteria on how to choose the best one} taking into account environmental
+      sustainability for a given biomass and biorefinery product (e.g.
+      glucose.)
   \end{itemize}
 \end{frame}
 
@@ -80,15 +86,22 @@
   \frametitle{Proposed solution}
 
   \begin{itemize}
-    \item Represent scientific knowledge with ontologies using recommended standardized tools and languages for such purposes (semantic web technologies, RDF(S), OWL, etc.)
+    \item Represent scientific knowledge with ontologies using recommended
+      standardized tools and languages for such purposes (semantic web
+      technologies, RDF(S), OWL, etc.)
 
     \pause
 
-    \item Develop an ontology and data management web application (e.g. the \textbf{@Web platform}) that makes it easy for scientists to introduce data from scientific publications into an ontology, execute queries against an ontology, etc.
+    \item Develop an ontology and data management web application (e.g. the
+      \textbf{@Web platform}) that makes it easy for scientists to introduce
+      data from scientific publications into an ontology, execute queries
+      against an ontology, etc.
 
     \pause
 
-    \item Create integrity constraints to automatically detect inconsistencies and errors in scientific publications and to automatically classify publications according to their topics.
+    \item Create integrity constraints to automatically detect inconsistencies
+      and errors in scientific publications and to automatically classify
+      publications according to their topics.
 
     \pause
 
@@ -116,7 +129,8 @@
 
     \pause
 
-    \item \textbf{Generic} enough so that the approach can be applied to different, unrelated domains.
+    \item \textbf{Generic} enough so that the approach can be applied to
+      different, unrelated domains.
 
     \pause
 
@@ -193,15 +207,18 @@
   \frametitle{The annotator's task}
 
   \begin{itemize}
-    \item Given a scientific publication and a desired ontology, capture data from the publication using the appropriate concepts in the ontology.
+    \item Given a scientific publication and a desired ontology, capture data
+      from the publication using the appropriate concepts in the ontology.
 
     \pause
 
-    \item Create and update concepts in the ontology as they're discovered during the annotation process (i.e. in an iterative fashion.)
+    \item Create and update concepts in the ontology as they're discovered
+      during the annotation process (i.e. in an iterative fashion.)
 
     \pause
 
-    \item Write and edit \textbf{guidelines} associated to each concept explaining when and how a concept should be used.
+    \item Write and edit \textbf{guidelines} associated to each concept
+      explaining when and how a concept should be used.
   \end{itemize}
 \end{frame}
 
@@ -224,34 +241,44 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Some sample guidelines that can be easily translated into SPARQL constraints}
+  \frametitle{Some sample guidelines that can be easily translated into SPARQL
+  constraints}
   \framesubtitle{Integrity constraints}
 
   \begin{itemize}
-    \item \textit{``The output quantity of a step is equal to the sum of the quantity of water used and the quantity of biomass present in the step.''}
+    \item \textit{``The output quantity of a step is equal to the sum of the
+      quantity of water used and the quantity of biomass present in the
+    step.''}
 
     \pause
 
-    \item \textit{``When the biomass doesn't have starch, we consider that the cellulose percentage equals to the glucose percentage and that the hemicellulose percentage equals to the sum of xylose and arabinose percentage (and potential other sugars like mannose, galactose, etc.)''}
+    \item \textit{``When the biomass doesn't have starch, we consider that the
+      cellulose percentage equals to the glucose percentage and that the
+    hemicellulose percentage equals to the sum of xylose and arabinose
+  percentage (and potential other sugars like mannose, galactose, etc.)''}
 
     \pause
 
-    \item \textit{``Furthermore, we consider that the glucose rate equals to glucan rate divided by 0.9.''}
+    \item \textit{``Furthermore, we consider that the glucose rate equals to
+      glucan rate divided by 0.9.''}
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Some sample guidelines that can be easily translated into SPARQL constraints}
+  \frametitle{Some sample guidelines that can be easily translated into SPARQL
+  constraints}
   \framesubtitle{Classification constraints}
 
   TODO
 \end{frame}
 
 \begin{frame}
-  \frametitle{An example of a guideline that \textbf{cannot} be easily translated into SPARQL constraints}
+  \frametitle{An example of a guideline that \textbf{cannot} be easily
+  translated into SPARQL constraints}
 
   \begin{itemize}
-    \item \textit{``In all treatments, when the authors indicate ``overnight'', we considered a duration treatment between 10 and 15 hours''}
+    \item \textit{``In all treatments, when the authors indicate ``overnight'',
+      we considered a duration treatment between 10 and 15 hours''}
   \end{itemize}
 \end{frame}
 
