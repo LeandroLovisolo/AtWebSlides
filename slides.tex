@@ -17,7 +17,7 @@
 }
 \date{September 11, 2015}
 \institute{
-  I.N.R.A. SupAgro \\
+  INRA SupAgro and INRIA GraphiK \\
   Montpellier, France
 }
 
@@ -76,13 +76,6 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Motivation}
-  \framesubtitle{Sample problem domain: \textbf{packaging selection}}
-
-  TODO
-\end{frame}
-
-\begin{frame}
   \frametitle{Proposed solution}
 
   \begin{itemize}
@@ -106,7 +99,7 @@
     \pause
 
     \begin{itemize}
-      \item The focus of my internship!
+      \item \textit{The focus of my internship!}
     \end{itemize}
 
   \end{itemize}
@@ -225,8 +218,6 @@
 \begin{frame}
   \frametitle{An example of data captured from a scientific publication}
 
-  TODO: Find a better example.
-
   \begin{center}
     \includegraphics[width=11cm]{table.jpg}
   \end{center}
@@ -252,15 +243,8 @@
 
     \pause
 
-    \item \textit{``When the biomass doesn't have starch, we consider that the
-      cellulose percentage equals to the glucose percentage and that the
-    hemicellulose percentage equals to the sum of xylose and arabinose
-  percentage (and potential other sugars like mannose, galactose, etc.)''}
-
-    \pause
-
-    \item \textit{``Furthermore, we consider that the glucose rate equals to
-      glucan rate divided by 0.9.''}
+    \item \textit{``The second milling step must give an “Output solid
+      constituent size” smaller than 0,5-1 mm.''}
   \end{itemize}
 \end{frame}
 
@@ -269,16 +253,30 @@
   constraints}
   \framesubtitle{Classification constraints}
 
-  TODO
+  \begin{itemize}
+    \item \textit{``Topic Bioref-PM-PC-UFM-PS : included experiments are
+      composed of a pre-milling step, followed by a physico-chemical treatment,
+    then by an ultrafine milling step (ball milling, wet disk milling, etc.), a
+  press and separation step (washing and filtration), and finally the enzymatic
+hydrolysis step. This topic requires a press and separation step because there
+are a lot of effluents in the physico-chemical step or because the milling is
+made with effluent. The second milling step must give an “Output solid
+constituent size” smaller than 0,5-1 mm. (en)''}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{An example of a guideline that \textbf{cannot} be easily
+  \frametitle{Examples of guidelines that \textbf{cannot} be easily
   translated into SPARQL constraints}
 
   \begin{itemize}
     \item \textit{``In all treatments, when the authors indicate ``overnight'',
       we considered a duration treatment between 10 and 15 hours''}
+
+    \pause
+
+    \item \textit{``Furthermore, we consider that the glucose rate equals to
+      glucan rate divided by 0.9.''}
   \end{itemize}
 \end{frame}
 
@@ -296,7 +294,7 @@
     \item 2 occurrences of the phrase \textit{``multiplied by''}
   \end{itemize}
 
-  spread across 30 relations.
+  spread across guidelines associated with 30 relation concepts.
 
   \vspace{1em}
 
